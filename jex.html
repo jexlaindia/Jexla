@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>JEXLA Group | Engineering for a Better Life</title>
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+darkMode: "class",
+theme: {
+extend: {
+colors: {
+primary: "#008080",
+ocean: "#004d4d",
+"background-light": "#ffffff",
+"background-dark": "#0f172a",
+},
+fontFamily: {
+display: ["Plus Jakarta Sans",
+"sans-serif"],
+},
+},
+},
+};
+</script>
+<style type="text/tailwindcss">
+@layer base {
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+}
+}
+.material-symbols-outlined {
+font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.hero-gradient {
+background: linear-gradient(135deg, #002d2d 0%, #004d4d 100%);
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<header class="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden">
+<img
+id="logo"
+src="logo.jpg"
+alt="logo"
+class="w-full h-full object-cover rounded-full"
+/>
+</div>
+<div>
+<h1 class="text-xl font-extrabold tracking-tight leading-none text-white">JEXLA Group</h1>
+<p class="text-[8px] uppercase tracking-widest text-teal-300 font-bold">
+Excellence &amp; Automation
+</p>
+</div>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="#verticals">Verticals</a>
+<a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="#promoter">Founder</a>
+<a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="#vision">Vision</a>
+<a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="#contact">Contact</a>
+<button class="p-2 text-white/70 hover:bg-white/10 rounded-full" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+</nav>
+</div>
+</div>
+</header>
+<section class="hero-gradient pt-40 pb-32 lg:pt-56 lg:pb-48 relative overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<div class="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-teal-400 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-blue-400 rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<div class="flex flex-col items-center justify-center mb-12">
+
+<!-- Rotating Logo -->
+<div
+class="w-24 h-24 bg-white rounded-full shadow-2xl overflow-hidden animate-spin-slow"
+>
+<img
+src="logo.jpg"
+alt="logo"
+class="w-full h-full object-cover"
+/>
+</div>
+</div>
+<h1 class="text-6xl lg:text-8xl font-extrabold text-white mb-6 leading-tight tracking-tight">JEXLA Group</h1>
+<h2 class="text-xl lg:text-3xl font-black text-teal-300 mb-8 uppercase tracking-widest max-w-5xl mx-auto leading-tight">
+JAGTAP ECOSYSTEM EXCELLENCE AND LIVES AUTOMATION
+</h2>
+<p class="text-xl lg:text-2xl text-teal-50/90 max-w-3xl mx-auto mb-12 font-medium">
+Engineering for a Better Life and Sustainable Future.
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<a class="w-full sm:w-auto px-10 py-4 bg-white text-ocean hover:bg-teal-50 font-bold rounded-full transition-all shadow-2xl flex items-center justify-center gap-2" href="#about">
+Explore Our Ecosystem <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+<a class="w-full sm:w-auto px-10 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold rounded-full transition-all" href="#contact">
+Contact Us
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-slate-900" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-[3rem] p-10 md:p-20 border border-slate-100 dark:border-slate-800 shadow-sm">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Introduction</span>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 mb-8">About JEXLA Group</h2>
+<p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
+JEXLA Group is a diversified business ecosystem built with a strong foundation of innovation, sustainability, and technology-driven solutions. The group is envisioned to operate across sale and service,  manufacturing, technology services, industrial solutions, and environmental sustainability domains. Each vertical under JEXLA is designed to address evolving market needs while maintaining responsible business practices. Our long-term goal is to create value-driven enterprises that support industrial growth, environmental protection, and community development. JEXLA Group stands for excellence, adaptability, and future-focused execution
+</p>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 font-semibold italic">
+"Engineering for a Better Life and Sustainable Future."
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-24 bg-white dark:bg-slate-900" id="promoter">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-ocean rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:grid md:grid-cols-5">
+<div class="md:col-span-2 relative min-h-[400px] bg-teal-900">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[200px] text-white/10">
+<img id="mayur" src="ceo.jpg" alt="mayur" />
+</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-10">
+<h3 class="text-3xl font-extrabold text-white">Mr. Mayur J's</h3>
+<p class="text-teal-300 font-bold tracking-widest uppercase text-xs mt-2">
+Founder &amp; CEO
+</p>
+</div>
+</div>
+<div class="md:col-span-3 p-10 md:p-16 flex flex-col justify-center">
+<span class="text-teal-400 font-bold uppercase tracking-[0.2em] text-xs mb-4">Leadership</span>
+<h2 class="text-3xl font-bold text-white mb-6">About Our Promoter</h2>
+<div class="space-y-6">
+<p class="text-teal-50/90 text-lg leading-relaxed">
+JEXLA Group is promoted by Mr. Mayur J's, a distinguished Bachelor of Engineering Graduate. Mr. Mayur J's brings a wealth of cross-industry experience, having successfully managed and scaled operations in multiple business domains. His expertise spans the intricate dynamics of the manufacturing industry, the client-focused demands of the services sector, and the high standards of the hospitality industry. His vision is the driving force behind the Group's dedication to integrated excellence and automation across all ventures
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-24 bg-slate-50 dark:bg-background-dark" id="verticals">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-6">Our Business Verticals</h2>
+<div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors shadow-sm">
+<span class="material-symbols-outlined text-3xl">shopping_cart_checkout</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">JEXLA Sales &amp; Services</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+JEXLA Sales & Services is a customer-focused sales and technical support vertical working with trusted partner companies. We provide selected products along with installation, commissioning, and reliable after-sales support. Our services cater to telecom, infrastructure, hospitality, and institutional projects. We act as a single-point solution with strong emphasis on service quality and customer satisfaction.
+</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors shadow-sm">
+<span class="material-symbols-outlined text-3xl">3d_rotation</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">JEXLA 3D Custom Appliances</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+JEXLA 3D Custom Appliances specializes in the design and manufacturing of customized products using 3D printing and injection moulding technologies. We develop application-specific solutions based on market needs. Our focus is on rapid prototyping, flexible manufacturing, and scalable production with consistent quality.
+</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors shadow-sm">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">JEXLA Industrial Service &amp; Solutions</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+JEXLA Industrial Service & Solutions is a planned sustainability-driven vertical supporting industries in improving efficiency and environmental performance. Our future focus includes CO₂ reduction, pollution control, and carbon capture solutions. We aim to help industries align with environmental regulations and move toward cleaner operations.
+</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group lg:col-span-1">
+<div class="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors shadow-sm">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">JEXLA Ecosystem Excellence</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+JEXLA Ecosystem Excellence is an upcoming sustainability vertical focused on environmental protection and ecosystem development. We plan to work with government bodies and institutions on projects related to smart cities, pollution control, agriculture, and river rejuvenation. This vertical reflects JEXLA’s long-term commitment to responsible and sustainable development
+</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="py-24 bg-slate-50 dark:bg-background-dark" id="vision">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl 1g:text-5x1 font-extrabold text-slate-900 dark:text-white mb-6">Our Vision &amp; Mission</h2>
+<div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-slate-900 p-12 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group hover:border-primary/50 transition-all">
+<div class="absolute -top-10 -right-10">
+<span class="material-symbols-outlined text-primary/5 text-[200px]">visibility</span>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-teal-50 dark:bg-teal-900/30 text-primary rounded-2xl flex items-center justify-center mb-8 shadow-sm">
+<span class="material-symbols-outlined text-4xl">visibility</span>
+</div>
+<h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-6">Vision</h3>
+<p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+"To build a future-ready business ecosystem driven by innovation, sustainability, and responsible technology, where industrial growth, environmental care, and societal progress move forward together under the JEXLA Group."
+</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-12 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group hover:border-primary/50 transition-all">
+<div class="absolute -top-10 -right-10">
+<span class="material-symbols-outlined text-primary/5 text-[200px]">rocket_launch</span>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-teal-50 dark:bg-teal-900/30 text-primary rounded-2xl flex items-center justify-center mb-8 shadow-sm">
+<span class="material-symbols-outlined text-4xl">rocket_launch</span>
+</div>
+<h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-6">Mission</h3>
+<p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+"Our mission is to deliver reliable products and services through advanced technologies, customer-focused execution, and ethical business practices, while progressively developing sustainable solutions that reduce environmental impact and create long-term value for industries, communities, and the ecosystem. "
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-slate-950 text-white pt-24 pb-12" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl lg:text-5xl font-extrabold mb-4">Get In Touch</h2>
+<p class="text-slate-400 text-xl">
+Connect with our specialized divisions
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8 mb-20">
+<div class="bg-slate-900/50 p-10 rounded-3xl text-center border border-white/5 hover:border-primary/50 transition-colors">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">business_center</span>
+</div>
+<h4 class="text-xl font-bold mb-2">Business Inquiries</h4>
+<p class="text-slate-400 mb-4 text-sm">
+Corporate &amp; Partnership
+</p>
+<a class="text-primary font-bold text-lg hover:underline decoration-2 break-all" href="mailto:jexla.group@gmail.com">jexla.group@gmail.com</a>
+</div>
+<div class="bg-slate-900/50 p-10 rounded-3xl text-center border border-white/5 hover:border-primary/50 transition-colors">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">engineering</span>
+</div>
+<h4 class="text-xl font-bold mb-2">Service Division</h4>
+<p class="text-slate-400 mb-4 text-sm">
+Technical Support &amp; After-Sales
+</p>
+<a class="text-primary font-bold text-lg hover:underline decoration-2 break-all" href="mailto:jexla.service@gmail.com">jexla.service@gmail.com</a>
+</div>
+<div class="bg-primary p-10 rounded-3xl text-center shadow-2xl shadow-primary/20">
+<div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-white text-4xl">call</span>
+</div>
+<h4 class="text-xl font-bold mb-2 text-white">Direct Contact</h4>
+<p class="text-white/70 mb-4 text-sm">
+Immediate Assistance
+</p>
+<a class="inline-block bg-white text-ocean px-8 py-3 rounded-full font-extrabold transition-all hover:scale-105 active:scale-95 text-lg" href="https://wa.me/message/R6MAOADKJ5PON1">
++91 9552388141
+</a>
+</div>
+</div>
+<div class="max-w-3xl mx-auto bg-white/5 rounded-[2.5rem] p-8 md:p-12 mb-20 border border-white/10">
+<h3 class="text-2xl font-bold mb-8 text-center">Send us a Message</h3>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Full Name</label>
+<input class="w-full bg-slate-900 border-slate-800 rounded-xl focus:ring-primary focus:border-primary text-white" placeholder="Your Name" type="text" />
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Email Address</label>
+<input class="w-full bg-slate-900 border-slate-800 rounded-xl focus:ring-primary focus:border-primary text-white" placeholder="email@example.com" type="email" />
+</div>
+<div class="md:col-span-2">
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Message</label>
+<textarea class="w-full bg-slate-900 border-slate-800 rounded-xl focus:ring-primary focus:border-primary text-white" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full py-4 bg-primary hover:bg-teal-600 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2" type="submit">
+Send Message <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+
+<footer class="bg-slate-900 text-white pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden">
+<img
+id="logo"
+src="logo.jpg"
+alt="logo"
+class="w-full h-full object-cover rounded-full"
+/>
+</div>
+<div>
+<h4 class="text-lg font-extrabold tracking-tight leading-none">JEXLA Group</h4>
+<p class="text-[8px] uppercase tracking-widest text-primary font-bold">
+Excellence &amp; Automation
+</p>
+</div>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-8">
+Pioneering innovation in manufacturing, sustainable solutions, and automation services. Driving technological advancement and global excellence.
+</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">facebook</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors text-xl font-bold" href="#">𝕏</a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">link</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">photo_camera</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6 border-b border-slate-800 pb-4">Quick Links</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#promoters">Promoters</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sectors">Sectors</a></li>
+<li><a class="hover:text-primary transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6 border-b border-slate-800 pb-4">Our Sectors</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Manufacturing Industry</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">JEXLA Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainable Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Export-Import Services</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6 border-b border-slate-800 pb-4">Contact Info</h5>
+<div class="space-y-4 text-slate-400 text-sm">
+<p class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+Maharashtra, India
+</p>
+<p class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<a href="https://wa.me/message/R6MAOADKJ5PON1">+91 95523 88141</a>
+</p>
+<p class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+info@jexlagroup.com
+</p>
+</div>
+</div>
+
+</div>
+
+<div class="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+<p>
+<a class="hover:text-primary transition-colors" href="https://devmanthan.netlify.app/">Designed & Developed by Manthan Ovhal</a>
+</p>
+
+</div>
+
+
+</div>
+
+</footer>
+
+<div class="pt-16 border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 text-slate-500 text-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden">
+<img
+id="logo"
+src="logo.jpg"
+alt="logo"
+class="w-full h-full object-cover rounded-full"
+/>
+</div>
+<span class="font-extrabold text-white tracking-tighter text-lg uppercase">JEXLA Group</span>
+</div>
+<p class="uppercase tracking-[0.2em] font-bold text-[10px]">
+© 2026 JEXLA GROUP. ALL RIGHTS RESERVED.
+</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
